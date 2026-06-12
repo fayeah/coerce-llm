@@ -1,5 +1,11 @@
 # coerce-llm
 
+[![CI](https://github.com/fayeah/coerce-llm/actions/workflows/ci.yml/badge.svg)](https://github.com/fayeah/coerce-llm/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/coerce-llm)](https://www.npmjs.com/package/coerce-llm)
+[![install size](https://packagephobia.com/badge?p=coerce-llm)](https://packagephobia.com/result?p=coerce-llm)
+[![license](https://img.shields.io/github/license/fayeah/coerce-llm)](https://github.com/fayeah/coerce-llm/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/fayeah/coerce-llm)](https://github.com/fayeah/coerce-llm)
+
 > 把国产 / 推理模型吐出的脏 JSON,稳定解析成符合 zod schema 的结构化数据。框架无关的"解析 + 修复"核。
 
 国产模型(ChatGLM / DeepSeek / Qwen…)和推理模型常常**不支持原生结构化输出**(function calling / json schema),只能"提示 + 自己解析"。而它们的输出又脏:包 ```json 围栏、前置废话、`<think>` 思考过程、全角标点、中文引号、单引号、尾逗号……普通 `JSON.parse` 一碰就炸。

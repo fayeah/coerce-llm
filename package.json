@@ -3,6 +3,14 @@
   "version": "0.1.0",
   "description": "把国产/推理模型吐出的脏 JSON 稳定解析成符合 zod schema 的结构化数据。框架无关的解析+修复核。",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fayeah/coerce-llm.git"
+  },
+  "homepage": "https://github.com/fayeah/coerce-llm#readme",
+  "bugs": {
+    "url": "https://github.com/fayeah/coerce-llm/issues"
+  },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -15,7 +23,8 @@
   },
   "files": [
     "dist",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --clean --target node18",
