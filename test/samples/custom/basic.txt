@@ -1,0 +1,8 @@
+```json
+{
+  "title": "潜在的空指针引用风险",
+  "severity": "high",
+  "tags": ["null-pointer", "bug", "runtime-error"],
+  "line": 42
+}
+```

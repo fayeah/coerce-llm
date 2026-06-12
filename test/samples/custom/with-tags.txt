@@ -1,0 +1,8 @@
+```json
+{
+  "title": "Reflected XSS via Unsanitized User Input in Search Parameter",
+  "severity": "high",
+  "tags": ["xss", "input-validation", "web-security"],
+  "line": 42
+}
+```

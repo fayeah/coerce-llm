@@ -1,0 +1,5 @@
+好的,以下是审查结果:
+```json
+{"title":"空指针风险"，"severity":"high"，"tags":["bug","npe"],"line":42,}
+```
+希望对你有帮助!

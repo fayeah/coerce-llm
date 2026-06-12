@@ -1,0 +1,8 @@
+```json
+{
+  "title": "空指针解引用",
+  "severity": "high",
+  "tags": ["null-pointer", "memory-safety", "runtime-error"],
+  "line": 42
+}
+```

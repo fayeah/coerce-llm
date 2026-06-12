@@ -1,0 +1,1 @@
+{ "title": "XSS 注入风险", "severity": "high", "tags": ["xss", "security"] }

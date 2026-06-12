@@ -1,0 +1,55 @@
+{
+  "name": "coerce-llm",
+  "version": "0.1.0",
+  "description": "把国产/推理模型吐出的脏 JSON 稳定解析成符合 zod schema 的结构化数据。框架无关的解析+修复核。",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean --target node18",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test test/*.test.ts",
+    "capture": "node --import tsx scripts/capture.ts",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build"
+  },
+  "keywords": [
+    "llm",
+    "json",
+    "zod",
+    "structured-output",
+    "chatglm",
+    "deepseek",
+    "qwen",
+    "repair",
+    "parse"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {
+    "zod": "^3.23.0 || ^4.0.0"
+  },
+  "dependencies": {
+    "json5": "^2.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "22",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "zod": "^3.24.1"
+  }
+}

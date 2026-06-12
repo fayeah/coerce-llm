@@ -1,0 +1,8 @@
+```json
+{
+  "title": "Reflected XSS in Search Parameter",
+  "severity": "high",
+  "tags": ["CWE-79", "OWASP Top 10"],
+  "line": 42
+}
+```

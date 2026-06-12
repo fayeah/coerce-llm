@@ -1,0 +1,5 @@
+<think>
+用户想要一个并发问题的结构化描述,我需要返回 title、severity、tags、line。
+让我组织一下……
+</think>
+{"title":"竞态条件","severity":"medium","tags":["concurrency","race"]}

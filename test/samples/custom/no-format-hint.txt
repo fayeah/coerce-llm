@@ -1,0 +1,37 @@
+你的消息里提到"上面的字段",但我没有看到之前的对话内容或字段定义。不过我可以根据你列出的字段名(title/severity/tags/line)推断结构,给你一个描述**并发竞态问题**的 JSON 示例:
+
+```json
+{
+  "title": "共享计数器的非原子读-改-写操作导致竞态条件",
+  "severity": "high",
+  "tags": ["concurrency", "race-condition", "data-race", "thread-safety"],
+  "line": 42
+}
+```
+
+如果需要更贴近真实场景,这里是一个更具体的例子:
+
+```json
+{
+  "title": "多个 goroutine 并发访问 map 未加锁导致竞态",
+  "severity": "critical",
+  "tags": ["concurrency", "race-condition", "unsynchronized-access", "map"],
+  "line": 87
+}
+```
+
+---
+
+不过我想确认几点,以便给你**更准确**的结果:
+
+1. **字段的预期类型/取值**我猜测如下,是否正确?
+   - `title`: 字符串(问题标题)
+   - `severity`: 枚举?(如 `low` / `medium` / `high` / `critical`)
+   - `tags`: 字符串数组
+   - `line`: 整数(代码行号)
+
+2. 是否还有我没看到的字段定义(比如 `file`、`description`、`id`)?
+
+3. 你希望描述的是**某段具体代码**里的竞态,还是一个**通用示例**?
+
+如果你能把"上面的字段"对应的原始定义或代码贴出来,我可以生成完全匹配的 JSON。
